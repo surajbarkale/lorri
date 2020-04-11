@@ -6,6 +6,14 @@
     # Find the current version number with `git log --pretty=%h | wc -l`
     entries = [
       {
+        version = 529;
+        changes = ''
+          `lorri daemon` got a `--extra-nix-options` flag to pass further options
+          to nix as a JSON object, or at least a subset.
+          `builders` and `substituters` is supported for now.
+        '';
+      }
+      {
         version = 518;
         changes = ''
           Internal subcommands is now visible for all users inside the internal
